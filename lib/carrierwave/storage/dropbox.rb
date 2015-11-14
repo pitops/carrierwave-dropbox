@@ -51,7 +51,7 @@ module CarrierWave
         end
 
         def url
-          @client.media(@path)["url"]
+          @client.shares(@path, short_url = false)["url"]
         end
 
         def delete
